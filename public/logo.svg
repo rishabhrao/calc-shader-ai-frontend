@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+	<!-- Background gradient representing shader -->
+	<defs>
+		<linearGradient id="shader-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+			<stop offset="0%" stop-color="#4B0082" />
+			<stop offset="50%" stop-color="#8A2BE2" />
+			<stop offset="100%" stop-color="#9370DB" />
+		</linearGradient>
+
+		<!-- Circuit pattern for AI representation -->
+		<pattern
+			id="circuit-pattern"
+			patternUnits="userSpaceOnUse"
+			width="60"
+			height="60"
+			patternTransform="scale(0.5)"
+		>
+			<path
+				d="M15,0 L15,60 M0,15 L60,15 M45,0 L45,60 M0,45 L60,45"
+				stroke="#FFFFFF"
+				stroke-width="1"
+				stroke-opacity="0.2"
+				fill="none"
+			/>
+			<circle cx="15" cy="15" r="3" fill="#FFFFFF" fill-opacity="0.3" />
+			<circle cx="45" cy="15" r="3" fill="#FFFFFF" fill-opacity="0.3" />
+			<circle cx="15" cy="45" r="3" fill="#FFFFFF" fill-opacity="0.3" />
+			<circle cx="45" cy="45" r="3" fill="#FFFFFF" fill-opacity="0.3" />
+		</pattern>
+	</defs>
+
+	<!-- Main background with shader gradient - now full size -->
+	<rect x="0" y="0" width="400" height="400" fill="url(#shader-gradient)" />
+
+	<!-- Circuit overlay representing AI -->
+	<rect x="0" y="0" width="400" height="400" fill="url(#circuit-pattern)" />
+
+	<!-- Calculator display - centered and scaled -->
+	<rect x="75" y="100" width="130" height="60" rx="5" ry="5" fill="#E0E0E0" />
+
+	<!-- Calculator buttons - centered and scaled -->
+	<rect x="75" y="170" width="30" height="30" rx="3" ry="3" fill="#FFFFFF" />
+	<rect x="125" y="170" width="30" height="30" rx="3" ry="3" fill="#FFFFFF" />
+	<rect x="175" y="170" width="30" height="30" rx="3" ry="3" fill="#FFFFFF" />
+	<rect x="75" y="220" width="30" height="30" rx="3" ry="3" fill="#FFFFFF" />
+	<rect x="125" y="220" width="30" height="30" rx="3" ry="3" fill="#FFFFFF" />
+	<rect x="175" y="220" width="30" height="30" rx="3" ry="3" fill="#FFFFFF" />
+
+	<!-- Shader wave representation - repositioned -->
+	<path
+		d="M220 150 Q250 100, 280 150 Q310 200, 340 150"
+		stroke="#00FFFF"
+		stroke-width="4"
+		fill="none"
+	/>
+	<path
+		d="M220 170 Q250 120, 280 170 Q310 220, 340 170"
+		stroke="#FF00FF"
+		stroke-width="4"
+		fill="none"
+	/>
+	<path
+		d="M220 190 Q250 140, 280 190 Q310 240, 340 190"
+		stroke="#FFFF00"
+		stroke-width="4"
+		fill="none"
+	/>
+
+	<!-- Rust logo hint (gear) - repositioned -->
+	<circle cx="300" cy="260" r="30" fill="#FF4500" />
+	<circle cx="300" cy="260" r="15" fill="url(#shader-gradient)" />
+</svg>
